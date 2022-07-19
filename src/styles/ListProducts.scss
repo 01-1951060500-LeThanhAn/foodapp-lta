@@ -1,0 +1,145 @@
+.catalog {
+  padding: 60px 90px;
+  
+  &__container {
+    display: flex;
+
+    &__left {
+      width: 25%;
+      margin-top: -15px;
+      &__filter {
+        &__title {
+          color: #292929;
+          font-family: Pangolin, cursive;
+        }
+        &__box {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          margin-right: 20px;
+          &__image {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          &__btn {
+            p {
+              margin-left: 20px;
+              cursor: pointer;
+
+              font-family: Pangolin, cursive;
+            }
+          }
+        }
+
+        &__rate {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          &__desc {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    &__right {
+      width: 80%;
+      &__box {
+        display: flex;
+        align-items: center;
+        &__search {
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          position: relative;
+          min-width: 60%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          input {
+            position: absolute;
+            height: 90%;
+            top: 0;
+            left: 0;
+            width: 95%;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+          }
+          &__icon {
+            position: absolute;
+            right: 5px;
+            top: 10%;
+            font-size: 22px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.3);
+          }
+        }
+
+        &__sort {
+          margin-left: 30px;
+          // select {
+          //   border: 1px solid rgba(0,0,0,0.3);
+          //   padding: 6px 0;
+          //   option {
+          //     height: 10px;
+          //     outline: none;
+          //   }
+          // }
+          span {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 4px 50px;
+            cursor: pointer;
+            position: relative;
+          }
+          ul {
+            display: none;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            position: absolute;
+          
+            z-index: 1000;
+            background-color:white;
+            width: 180px;
+            li {
+              list-style: none;
+              padding: 10px;
+              cursor: pointer;
+              font-weight: 600;
+            }
+            &.active {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .catalog {
+      padding: 40px 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .catalog {
+    padding: 30px;
+    &__container {
+      &__left {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .catalog {
+    margin: 0 25px;
+    &__container {
+      &__left {
+        display: none;
+      }
+    }
+  }
+}

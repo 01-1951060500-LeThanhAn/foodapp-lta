@@ -1,0 +1,72 @@
+.review {
+  margin: 0;
+  
+  margin-top: 60px;
+  &__container {
+    padding: 80px 50px;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+
+      &__item {
+        background-color: white;
+        width: 370px;
+        height: 180px;
+        padding-left: 30px;
+        position: relative;
+        transition: all 0.4s linear;
+        &:nth-child(2)
+       
+{
+          margin-left: 200px;
+          margin-top: 30px;
+        }
+        &:nth-child(4) {
+          margin-left: 200px;
+          margin-top: 30px;
+        }
+        &__index {
+          display: block;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: -30px;
+          line-height: 50px;
+
+          background-color: white;
+          border-radius: 25px;
+          text-align: center;
+         
+          span {
+           
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+
+        &__title {
+          color: rgb(24, 20, 20);
+          position: absolute;
+          top: 15%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        &__desc {
+          color: rgb(73, 65, 65);
+          position: absolute;
+          top: 35%;
+        }
+        &:hover {
+          background-color: #F8514E;
+          h3 {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+    
+    }
+  }
+}

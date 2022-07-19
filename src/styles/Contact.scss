@@ -1,0 +1,51 @@
+.contact {
+  margin: 70px 50px 70px 80px;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      min-width: 300px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s linear;
+      
+      &__icon {
+        width: 15%;
+        padding-left: 10px;
+        font-size: 26px;
+        color: #c33d3a;
+      }
+
+      &__title {
+        width: 85%;
+        
+        height: 100px;
+        position: relative;
+        h4 {
+          position: absolute;
+          top: -10%;
+
+          font-size: 22px;
+        }
+        p {
+          position: absolute;
+          top: 40%;
+          font-weight: 600;
+        }
+      }
+     &:hover {
+      background-color: #c33d3a;
+      color: white;
+
+     
+     }
+     &:hover .contact__info__item__icon {
+       color: white;
+     }
+     
+    }
+   
+   
+  }
+}

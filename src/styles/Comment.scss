@@ -1,0 +1,127 @@
+.reviews {
+  
+  color: #292929;
+ 
+  padding-bottom: 30px;
+  
+  text-align: center;
+  cursor: pointer;
+ 
+
+}
+
+.comment {
+  padding: 0 90px 50px 90px;
+}
+.comment_container {
+  position: relative;
+  max-width: 800px; 
+  input {
+    width: 50%;
+    // border: 1px solid rgba(0,0,0,0.3);
+    border: none;
+    background-color: transparent;
+    padding: 14px 50px;
+    color: black;
+    outline: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    &::placeholder {
+      font-size: 14px;
+      color: black;
+      opacity: 0.6;
+    }
+  }
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    left: 27px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .send_comment {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    border: none;
+    color: white;
+    background-color: #c33d3a;
+    border-left: 2px solid white;
+    cursor: pointer;
+     p {
+          margin-left: 30px;
+        
+     }
+  } 
+
+  .error_comment {
+    margin-left: 50px;
+    h3 {
+      a {
+        text-decoration: none;
+        color: #c33d3a;
+      }
+    }
+  }
+}
+.show_comment {
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.699);
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.show_avatar {
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+.show_comments {
+  background-color: rgb(148, 136, 136);
+  width: max-content;
+   padding: 0 15px;
+   border-radius: 5px;
+   color: #fff; 
+   position: relative;
+}
+.show_commtent_items {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+.show_commtent_items .show_info {
+  line-height: 5px;
+}
+.remove_comment {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+.show_name_time {
+  display: flex;
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-left: 10px;
+  }
+}

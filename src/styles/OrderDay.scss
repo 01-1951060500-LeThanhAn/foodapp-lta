@@ -1,0 +1,31 @@
+.countup {
+  margin-top: 100px;
+  &__container {
+    padding: 200px 60px;
+
+    &__list {
+      width: 100%;
+      height: 200px;
+      background-color: #c33d3a;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &__item {
+        text-align: center;
+        font-size: 17px;
+        line-height: 10px;
+        &__title  {
+                  color: white;
+                 h2 {
+                           font-weight: 500;
+                 }
+        }
+        span {
+                  color: white;
+                  font-weight: bold;
+                  font-size: 40px;
+        }
+      }
+    }
+  }
+}

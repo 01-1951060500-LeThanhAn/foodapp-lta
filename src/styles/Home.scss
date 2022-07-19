@@ -1,0 +1,64 @@
+.slider {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+  .slider {
+    overflow: hidden;
+    &__container {
+      &__item {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.wishlist {
+  position: relative;
+  z-index: 1000;
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.3s;
+    &.active {
+      width: 450px;
+    }
+    &__overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      transition: all 0.35s linear;
+    }
+    &.active &__overlay {
+      width: 900px;
+    }
+
+    &__close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 22px;
+      margin-left: 20px;
+      font-weight: bold;
+      cursor: pointer;
+
+      width: 30px;
+      text-align: center;
+    }
+  }
+}

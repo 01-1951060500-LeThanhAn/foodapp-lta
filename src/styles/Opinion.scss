@@ -1,0 +1,52 @@
+.opinion {
+  padding: 60px;
+
+  &__guest {
+    p {
+      color: #fbb50d;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: Pangolin, cursive;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    &__box {
+      border-radius: 25px;
+      // border-top: 1px solid #af9e9e;
+      // box-shadow: 3px 3px 3px #af9e9e, -3px -3px 3px #b4a2a2;
+      width: 800px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 10px;
+      &__image {
+        img {
+          width: 130px;
+          height: 130px;
+          object-fit: cover;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+}
+      }
+
+      &__title {
+        font-size: 22px;
+        color: #292929;
+      }
+
+      &__desc {
+        color: #292929;
+        font-weight: 600;
+      }
+    }
+  }
+}

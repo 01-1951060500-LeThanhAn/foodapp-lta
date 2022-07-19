@@ -1,0 +1,133 @@
+.details {
+  padding: 90px 80px;
+  &__container {
+    display: flex;
+
+    &__left {
+      width: 50%;
+      &__image {
+        img {
+          max-width: 550px;
+          object-fit: cover;
+          height: auto;
+        }
+      }
+    }
+
+    &__right {
+      width: 50%;
+     
+      &__title {
+        color: #292929;
+        line-height: 10px;
+      }
+      &__review {
+        display: flex;
+        align-items: center;
+        p {
+          padding-left: 10px;
+        }
+      }
+
+      &__price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #c33d3a;
+      }
+
+      &__desc {
+        color: #292929;
+      }
+
+      &__info {
+        display: flex;
+        align-items: center;
+        &__popular {
+          padding-left: 10px;
+        }
+        p {
+          span {
+            color: #292929;
+          }
+        }
+      }
+
+      &__cart {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        &__quantity {
+          display: flex;
+          align-items: center;
+          &__minus {
+            padding-right: 30px;
+           cursor: pointer;
+          }
+          &__num {
+            padding-right: 30px;
+          }
+          &__plus {
+           cursor: pointer;
+          }
+        }
+
+        &__btn {
+          margin-left: 30px;
+          display: block;
+          border-radius: 25px;
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          background-color: #c33d3a;
+          color: white;
+          font-weight: 500;
+          min-width: 320px;
+          text-align: center;
+          padding: 8px 0;
+
+          cursor: pointer;
+        }
+
+        &__wishlist {
+          margin-left: 30px;
+          font-size: 20px;
+          position: relative;
+          cursor: pointer;
+          &:hover {
+            color: #c33d3a;
+            p {
+              opacity: 1;
+            }
+          }
+          p {
+            position: absolute;
+            font-size: 10px;
+            min-width: 70px;
+            text-align: center;
+            top: -100%;
+            background-color:#292929;
+            color: white;
+            opacity: 0;
+          }
+        }
+      }
+
+      &__freeship {
+        margin-top: 40px;
+        &__box {
+          border-left: 4px solid #c33d3a;
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          &__logo {
+            font-size: 23px;
+            color: #c33d3a;
+            padding-left: 5px;
+          }
+          p {
+            margin-left: 10px;
+            color: #292929;
+          }
+        }
+      }
+    }
+  }
+}

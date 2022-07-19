@@ -1,0 +1,34 @@
+.wishlist__item {
+  padding-top: 70px;
+  padding-left: 20px;
+  &__container {
+    display: flex;
+    align-items: center;
+    &__image {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__info {
+      margin-top: -15px;
+      padding-left: 20px;
+      line-height: 9px;
+   
+      h5 {
+        font-size: 17px;
+        margin-top: 5px;
+      }
+      p {
+        color: #292929;
+        font-weight: 600;
+        margin-top: -10px;
+      }
+      span {
+        font-weight: bold;
+        color: #c33d3a;
+      }
+    }
+  }
+}

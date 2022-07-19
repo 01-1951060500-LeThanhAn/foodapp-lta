@@ -1,0 +1,19 @@
+.slider__container__item {
+   
+    height: 70vh;
+    background-size: cover;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    .slider__container {
+        &__item {
+             height: 40vh;
+             width: 100%;
+        }
+    }
+   
+}
