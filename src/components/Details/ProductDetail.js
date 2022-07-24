@@ -17,7 +17,7 @@ import {
 import { MdOutlineLocalShipping } from "react-icons/md";
 import RelatedProduct from "./RelatedProducts/RelatedProduct";
 import { useDispatch } from "react-redux";
-import { addWishList } from "../../redux/wishlistReducer/WishListReducer"
+import { addWishList } from "../../redux/wishlistReducer/WishListReducer";
 import { addCart } from "../../redux/cartReducer/cartReducer";
 import Comment from "../Comment/Comment";
 import ReactImageMagnify from "react-image-magnify";
@@ -45,19 +45,21 @@ const Details = () => {
   };
 
   const handleAddWishList = () => {
-     if(!user) {
-       return toast.error("Please login to add wishlist product")
-     } else {
-       dispatch(addWishList({
-         id: info.id,
-         price: info.price,
-         name: info.name,
-         dsc: info.dsc,
-         img: info.img,
-       }))
-       return toast.success("Added products to wishlist")
-     }
-  }
+    if (!user) {
+      return toast.error("Please login to add wishlist product");
+    } else {
+      dispatch(
+        addWishList({
+          id: info.id,
+          price: info.price,
+          name: info.name,
+          dsc: info.dsc,
+          img: info.img,
+        })
+      );
+      return toast.success("Added products to wishlist");
+    }
+  };
 
   const dispatch = useDispatch();
 
@@ -88,13 +90,11 @@ const Details = () => {
       alt: "Phasellus laoreet",
       isFluidWidth: true,
       src: info.img,
-      
     },
     largeImage: {
       src: info.img,
       width: 1000,
       height: 1500,
-     
     },
     enlargedImageContainerStyle: { background: "#fff", zIndex: 9 },
   };
@@ -105,7 +105,7 @@ const Details = () => {
         <div className="container">
           <div className="slider__container">
             <div
-              className="slider__container__item" 
+              className="slider__container__item"
               style={{
                 background: `url(${bgPro})`,
                 height: "60vh",
@@ -191,16 +191,20 @@ const Details = () => {
                     <BiPlus />
                   </div>
                 </div>
-
-                <div
-                  className="details__container__right__cart__btn"
-                  onClick={handleAddCart}
-                >
-                  ADD TO CART
-                </div>
-                <div onClick={handleAddWishList} className="details__container__right__cart__wishlist">
-                  <i class="bi bi-balloon-heart"></i>
-                   <p>Add to wishlist</p>
+                <div className="details__container__right__cart__add">
+                  <div
+                    className="details__container__right__cart__add__btn"
+                    onClick={handleAddCart}
+                  >
+                    ADD TO CART
+                  </div>
+                  <div
+                    onClick={handleAddWishList}
+                    className="details__container__right__cart__add__wishlist"
+                  >
+                    <i class="bi bi-balloon-heart"></i>
+                    <p>Add to wishlist</p>
+                  </div>
                 </div>
               </div>
 

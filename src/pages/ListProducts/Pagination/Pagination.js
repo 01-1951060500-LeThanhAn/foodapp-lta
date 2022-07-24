@@ -1,10 +1,7 @@
 import React from "react";
-import "./Pagination.scss"
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai"
+import "./Pagination.scss";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 const Pagination = (props) => {
-
-  
-
   const {
     totalPageProduct,
     currentPage,
@@ -18,7 +15,7 @@ const Pagination = (props) => {
   for (let i = 1; i < totalPageProduct / maxProductPage; i++) {
     numberpage.push(i);
   }
-
+ 
   const updatePage = (type) => {
     changeCurrentPage(type);
   };
@@ -26,25 +23,30 @@ const Pagination = (props) => {
     <>
       <div className="page">
         <div className="page__number">
-          <div className="page__number__left"
-           onClick={() => updatePage("LEFT")}
-           >
+          <div
+            className="page__number__left"
+            onClick={() => updatePage("LEFT")}
+          >
             <AiOutlineLeft />
           </div>
 
           {numberpage.map((item, index) => (
             <span
-              className={currentPage === item ? "page__number__item active" : "page__number__item"}
+              className={
+                currentPage === item
+                  ? "page__number__item active"
+                  : "page__number__item"
+              }
               key={index}
-             
               onClick={() => paginateNumberPage(item)}
             >
               {item}
             </span>
           ))}
-          <div className="page__number__right"
-           onClick={() => updatePage("RIGHT")}
-           >
+          <div
+            className="page__number__right"
+            onClick={() => updatePage("RIGHT")}
+          >
             <AiOutlineRight />
           </div>
         </div>

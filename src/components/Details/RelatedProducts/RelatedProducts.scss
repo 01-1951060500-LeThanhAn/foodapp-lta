@@ -7,3 +7,21 @@
       color: #292929;
    }
 }
+
+@media screen and (max-width: 1024px) {
+   .related {
+      padding: 0 30px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .related {
+      padding: 0 50px 0 60px;
+   }
+}
+
+@media screen and (max-width: 414px) {
+   .related {
+    margin-left: 10px;
+   }
+}
